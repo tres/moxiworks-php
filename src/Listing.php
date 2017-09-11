@@ -340,7 +340,11 @@ class Listing extends Resource {
      *     optional Task search parameters
      * </h2>
      *       <br><b>updated_since </b> integer  Unix timestamp representing the start time for the search. If no <i>updated_since</i> parameter is included in the request, only listings updated in the last seven days will be included in the response.
-     *        <br><b>last_moxi_works_listing_id</b> string For multi-page responses (where the response value 'last_page' is false), send the listing ID of the last Listing in the previous page.
+     *       <br><b>moxi_works_agent_id </b> String  use this argument when searching only for listings associated with a specific user
+     *       <br><b>agent_uuid </b> String  use this argument when searching only for listings associated with a specific user
+     *       <br><b>moxi_works_office_id </b> String  use this argument when searching only for listings associated with a specific office
+     *
+     *        <br><b>last_moxi_works_listing_id</b> String For multi-page responses (where the response value 'last_page' is false), send the listing ID of the last Listing in the previous page.
      *
      * @return Listing paged response array with the format:
      *   [
